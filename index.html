@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Daily Bulletins</title>
+</head>
+<body>
+<div class="languages">
+<ul class="newslanguages">
+    <li><a class="active-click-event" id="ENGLISH" href=""><strong>English</strong></a></li>
+    <li><a class="click-event" id="TAMIL" href=""><strong>தமிழ்</strong></a></li>
+    <li><a class="click-event" id="BANGLA" href=""><strong>বাংলা </strong></a></li>
+    <li><a class="click-event" id="MALAYALAM" href=""><strong>குஜராத்தி</strong></a></li>
+    <li><a class="click-event" id="HINDI" href=""><strong>हिंदी</strong></a></li>
+    <li><a class="click-event" id="MARATHI" href=""><strong>मराठी</strong></a></li>
+</ul>
+</div>
+<div class="header-holder ">
+    <div class="header-section">
+        <div class="followusbx">
+            <span class="followustxt">Follow Us:</span>
+            <a href=""></a><i class="facebook"><img src="facebook.jpg" height="30" width="30" alt=""></i></a>
+            <a href=""><i class="twitter"><img src="twitter.jpg" height="30" width="30" alt=""></i></a>
+            <a href=""><i class="instagram"><img src="instagram.jpg" height="30" width="30" alt=""></i></a>  
+        </div>
+        <div class="ie-logos">
+            <div id="daily">Daily Bulletins</div>
+            <div class="datefollow">
+                <span class="datebox">Thursday, June 02, 2022</span>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<nav id="fixednavbar" class="fixednavbar">
+    <div class="mainnav">
+        <ul id="navbar">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="Business.html">Business</a></li>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="sports.html">Sports</a></li>
+            <li><a href="politics.html">Politics</a></li>
+        </ul>
+    </div>
+    <div class="breaking-news-section">
+        <span id="btext">Breaking News</span>
+        <marquee direction="left" onmouseover="this.stop()" onmouseout="this.start()">
+            <a href="#" class="breaking-news">
+                <p class="bntime">02 June 2022</p>
+                Twitter investor sues Elon Musk over takeover bid
+            </a>
+            <a href="#" class="breaking-news">
+                <p class="bntime">02 June 2022</p>
+                Could an island's secrets help fight climate change?
+            </a>
+            <a href="#" class="breaking-news">
+                <p class="bntime">02 June 2022</p>
+                AI robot paints Queen's portrait for her jubilee
+            </a>
+        </marquee>
+    </div>
+    </header>
+    <main>
+        <article id="popular-news">
+            <div id="featured">
+                <h2>FEATURED</h2>
+                <section class="popular-news-carousel">
+                    <div id="carousel" class="carousel slide" data-ride="carousel">
+    
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="f1.jpg"
+                                    style="width: 400px; height: 250px; object-fit: cover;" alt="First slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>World's biggest plant discovered off Australian coast</h5>
+    
+                                </div>
+                                <div class="readFull">
+                                    <textarea type="text" class="input" placeholder="" v-model="newItem"
+                                        @keyup.enter="addItem()"></textarea>
+                                    <button id="red" v-on:click="addItem()" class='primaryContained float-right'
+                                        type="submit">Add Comment</button>
+    
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="f2.jpg"
+                                    style="width: 400px; height: 250px; object-fit: cover;" alt="Second slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>KK:'Devastated' fans and colleagues pay tribute to Indian singer</h5>
+    
+                                </div>
+                                <div class="readFull">
+                                    <textarea type="text" class="input" placeholder="" v-model="newItem"
+                                        @keyup.enter="addItem()"></textarea>
+                                    <button id="red" v-on:click="addItem()" class='primaryContained float-right'
+                                        type="submit">Add Comment</button>
+    
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+            </div>
+            </section>
+    
+            </div>
+            <div id="latest">
+                <h2>LATEST</h2>
+                <section class="news">
+                    <div class="news-container">
+                        <img class="d-block w-100" src="r1.jpg" style="width: 400px; height: 250px; object-fit: cover;">
+                        <p class="carousel-text">How artificial intelligence 'blew up' tennis</p>
+                    </div>
+                    <div class="readFull">
+                        <textarea type="text" class="input" placeholder="" v-model="newItem"
+                            @keyup.enter="addItem()"></textarea>
+                        <button id="red" v-on:click="addItem()" class='primaryContained float-right' type="submit">Add
+                            Comment</button>
+                        <input type="email" placeholder="Interesting work!">
+    
+    
+    
+                    </div>
+                </section>
+                <section class="news">
+                    <div class="news-container">
+                        <img class="d-block w-100" src="r2.jpg" style="width: 400px; height: 250px; object-fit: cover;"
+                            alt="Second slide">
+                        <p class="carousel-text">Cinemas now accepting digital ID cards</p>
+                    </div>
+                    <div class="readFull">
+                        <textarea type="text" class="input" placeholder="" v-model="newItem"
+                            @keyup.enter="addItem()"></textarea>
+                        <button id="red" v-on:click="addItem()" class='primaryContained float-right' type="submit">Add
+                            Comment</button>
+                        <input type="email" placeholder="That's quite good">
+                </section>
+            </div>
+            </div>
+            <div id="our-picks">
+                <h2>OUR PICKS</h2>
+                <section class="news">
+                    <div class="news-container">
+                        <img class="d-block w-100" src="r3.jpg" style="width: 400px; height: 250px; object-fit: cover;"
+                            alt="Second slide">
+                        <p class="carousel-text">NI technology sector 'thriving' despite pandemic</p>
+                    </div>
+                    <div class="readFull">
+                        <textarea type="text" class="input" placeholder="" v-model="newItem"
+                            @keyup.enter="addItem()"></textarea>
+                        <button id="red" v-on:click="addItem()" class='primaryContained float-right' type="submit">Add
+                            Comment</button>
+                        <input type="email" placeholder="Keep Growing!">
+                </section>
+                <section class="news">
+                    <div class="news-container">
+                        <img class="d-block w-100" src="r4.jpg" style="width: 400px; height: 250px; object-fit: cover;"
+                            alt="Second slide">
+                        <p class="carousel-text">Why scientists are also watching animal YouTube videos</p>
+                    </div>
+                    <div class="readFull">
+                        <textarea type="text" class="input" placeholder="" v-model="newItem"
+                            @keyup.enter="addItem()"></textarea>
+                        <button id="red" v-on:click="addItem()" class='primaryContained float-right' type="submit">Add
+                            Comment</button>
+                        <input type="email" placeholder="We should think">
+                </section>
+    
+            </div>
+        </article>
+        <section class="more-news">
+            <div class="news-section">
+                <article class="world">
+                    <h2>BUSINESS</h2>
+                    <img src="business.jpg">
+                    <a href="business.html"></a>
+                    <h3>02 June 2022 : The new airlines betting flying is about to take off</h3>
+                    <p>Yet, over the past year dozens of new carriers have started up around the world, hoping that air
+                        travel is about to take
+                        off again.
+    
+                        "It's actually a very good time to launch an airline," says Bjorn Tore Larsen, chief executive of
+                        Norse Atlantic
+                        Airways. "There is a huge pent up demand. People haven't been able to travel for two years or more,
+                        particularly between
+                        continents."</p>
+                    <div class="publish">
+    
+                    </div>
+                    <div class="readFull">
+                        <textarea type="text" class="input" placeholder="" v-model="newItem"
+                            @keyup.enter="addItem()"></textarea>
+                        <button id="red" v-on:click="addItem()" class='primaryContained float-right' type="submit">Add
+                            Comment</button>
+                        <input type="email" placeholder="That's nice">
+    
+                        <div class="news-section">
+                </article>
+                <article class="sport">
+                    <h2>TECHNOLOGY</h2>
+                    <img src="tec.jpg">
+                    <h3>02 June 2022 : Twitter fined $150m in US for selling users' data</h3>
+                    <p>The Federal Trade Commission (FTC) and the Department of Justice say Twitter violated an agreement it
+                        had with
+                        regulators, court documents showed.
+    
+                        Twitter had vowed to not give personal information like phone numbers and email addresses to
+                        advertisers.
+    
+                        Federal investigators say the social media company broke those rules.</p>
+                    <div class="publish">
+    
+                    </div>
+                    <div class="readFull">
+                        <textarea type="text" class="input" placeholder="" v-model="newItem"
+                            @keyup.enter="addItem()"></textarea>
+                        <button id="red" v-on:click="addItem()" class='primaryContained float-right' type="submit">Add
+                            Comment</button>
+                        <input type="email" placeholder="These news is quite true">
+    
+                    </div>
+                </article>
+                <article class="sport">
+                    <h2>SPORTS</h2>
+                    <img src="sports.jpg">
+                    <h3>02 June 2022 : French Open: Rafael Nadal beats Novak Djokovic in late-night thriller</h3>
+                    <p>Nadal, going for a 14th title, started superbly and fought off resistance from defending champion
+                        Djokovic to win 6-2
+                        4-6 6-2 7-6 (7-4) at Roland Garros.
+    
+                        Nadal secured victory at 1:15am local time after over four hours on court.
+    
+                        The 21-time Grand Slam winner now faces third seed Alexander Zverev on Friday.</p>
+    
+                    <div class="publish">
+    
+                    </div>
+                    <div class="readFull">
+                        <textarea type="text" class="input" placeholder="" v-model="newItem"
+                            @keyup.enter="addItem()"></textarea>
+                        <button id="red" v-on:click="addItem()" class='primaryContained float-right' type="submit">Add
+                            Comment</button>
+                        <input type="email" placeholder="Woohoo Congratulations!">
+    
+                    </div>
+                </article>
+                <article class="sport">
+                    <h2>POLITICS</h2>
+                    <img src="politics.jpg">
+                    <h3>02 June 2022 : Ukraine war: US to send longer-range rockets in latest aid package</h3>
+                    <p>The weapons, long requested by Ukraine, are to help it strike enemy forces more precisely from a
+                        longer distance.
+    
+                        Until now, the US had refused the request out of fear the weapons could be used against targets in
+                        Russia.
+    
+                        Moscow said it viewed the latest US weapons package to Ukraine including the new systems "extremely
+                        negatively".</p>
+                    <div class="publish">
+    
+                    </div>
+                    <div class="readFull">
+                        <textarea type="text" class="input" placeholder="" v-model="newItem"
+                            @keyup.enter="addItem()"></textarea>
+                        <button id="red" v-on:click="addItem()" class='primaryContained float-right' type="submit">Add
+                            Comment</button>
+                        <input type="email" placeholder="Hope the war ends soon">
+    
+    
+    
+                    </div>
+                </article>
+            </div>
+    
+            <aside>
+                <h4>RECENT</h4>
+                <div class="recent-news">
+                    <img src="1.jpg">
+                    <p>Shanghai lockdown: China eases Covid restrictions after two months</p>
+                </div>
+                <div class="recent-news">
+                    <img src="2.jpg">
+                    <p>Soaring fertiliser prices force farmers to rethink</p>
+                </div>
+                <div class="recent-news">
+                    <img src="3.jpg">
+                    <p>Supreme Court blocks Texas 'de-platforming' law</p>
+                </div>
+                <div class="recent-news">
+                    <img src="4.jpg">
+                    <p>Proposal to tackle online abuse of politicians</p>
+                </div>
+                <div class="recent-news">
+                    <img src="5.jpg">
+                    <p>Tech firms must do more to protect women - Ofcom</p>
+                </div>
+                <div class="recent-news">
+                    <img src="6.jpg">
+                    <p>Report blasts "manipulative" video game loot boxes</p>
+                </div>
+                <div class="recent-news">
+                    <img src="7.jpg">
+                    <p>French officials told to abandon gaming Anglicisms</p>
+                </div>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <div class="social-links">
+            <section class="about">
+                <h2>About</h2>
+                <p>Daily Bulletins is an online web
+                    application which is simple and easy to use
+                    platform. It displays breaking news from all
+                    over the world and let people to be updated
+                    with the latest happenings around them. It
+                    include news from areas such as politics,
+                    technology, business and health.</p>
+    
+            </section>
+    
+            <section class="Subscribe">
+                <h2>Subscribe to our Newsletter</h2>
+                <p>Enter your email address to subscribe to this blog and receive notifications of new posts by email
+                </p>
+                <input type="email" placeholder="Email Address">
+                <button type="button" class="footer-buttons">Subscribe</button>
+            </section>
+        </div>
+    
+        <div class="copyright">Copyright © 2022 Daily Bulletins. All Rights Reserved</div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    </body>
+    
+    </html>

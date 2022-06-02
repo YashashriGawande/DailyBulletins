@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Sports</h1>
+<div class="container">
+    <div class="x">
+        <img src="sports.jpg" style="width: 350px; height: 200px; object-fit: cover;">
+    </div>
+    <div class="y">
+        <h2 class="title">
+            <h3>02 June 2022 : French Open: Rafael Nadal beats Novak Djokovic in late-night thriller</h3>
+            <p>Nadal, going for a 14th title, started superbly and fought off resistance from defending champion
+                Djokovic to win 6-2
+                4-6 6-2 7-6 (7-4) at Roland Garros.
+            
+                Nadal secured victory at 1:15am local time after over four hours on court.
+            
+                The 21-time Grand Slam winner now faces third seed Alexander Zverev on Friday.</p>
+           
+        </h2>
+        <div class="z">
+            <div class="publish">
+                <div class="dateTime"> June 02, 2022</div>
+            </div>
+            <div class="readFull">
+
+                <textarea type="text" class="input" placeholder="" v-model="newItem"
+                    @keyup.enter="addItem()"></textarea>
+                <button id="red" v-on:click="addItem()" class='primaryContained float-right' type="submit">Add
+                    Comment</button>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
